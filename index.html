@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Poetry Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lora&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #2c2c2c;
+      --light: #fefefe;
+      --bg: #fdfaf6;
+      --accent: #c84b31;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg) url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      color: #333;
+      line-height: 1.6;
+      transition: all 0.3s ease-in-out;
+    }
+
+    header {
+      background: var(--dark);
+      color: var(--light);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+
+    nav li {
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    nav a.active {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 5% 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1,
+    h2 {
+      font-family: 'EB Garamond', serif;
+      margin-bottom: 0.75rem;
+      color: var(--dark);
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .poem {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 1.5rem;
+    }
+
+    .poem p {
+      white-space: pre-wrap;
+      margin-top: 0.5rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      font-style: italic;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      display: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#poems">Poems</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Hello, I'm Dhiraj Bhattacharjee, a senior at Rutgers Business School. I began writing poetry to prioritize connection and human emotion. For me, poetry has developed into a means of expressing what is frequently left unsaid. If even one person has felt seen, understood, or inspired through my words, then I’ve done what I set out to do. My poems are pieces of who I represent—guarded, honest, and always reaching for something real. Feel free to reach out via the contact form if you have any questions, feedback, or just want to talk.
+      </p>
+    </section>
+    
+    <section id="poems">
+      <h1>Poems</h1>
+      <!-- Example poem block -->
+      <article class="poem">
+    
+           <!-- 20 poem placeholders you can replace with your own work -->
+      <article class="poem">
+        <h2>The Unsaid</h2>
+        <p>Your eyes speak in silence
+a vivid storm beneath calm waters
+while your mouth tells stories
+with words that don't match the rhythm.
+One whispers truth,
+the other wears a mask,
+and I can't decide which to trust
+the calm or the voice
+</p>
+      </article>
+      <article class="poem">
+        <h2>Rhythm is a dancer</h2>
+        <p>Rhythm is a dancer, flowing deep as in
+a feeling where words cannot begin,
+Moving through the heart, touching the soul,
+bringing us together, as a whole.
+A story must be told
+Countless traits, fearless and bold,
+A language of passion in every assist
+With pace and power, no one can resist
+</p>
+      </article>
+      <article class="poem">
+        <h2>For Him</h2>
+        <p>He is my safety net,
+he lost the right to fall himself.
+Sacrificing his own peace for my benefit,
+his exhaustion shows in the lines of his face.
+knowing mistakes weren’t an option,
+He always takes the hit,
+so that I could have a better life.
+“Slowing down feels selfish,”¹
+Like the world might crumble
+The gaze in his eyes–
+speaks of dreams deferred,
+of battles fought in rooms no one sees.
+And I wonder if he knows
+he deserves a chance to ease,
+to not take the hit,
+
+With me being the safety net this time.
+Thank you for having my back, brother.
+¹ Inspired by Thomas Hobbes
+
+</p>
+      </article>
+      <article class="poem">
+        <h2>When Winds Speak</h2>
+        <p> Fierce winds engrave the sky with grace.
+ A vortex of chaos, relentless in its chase.
+ Majestic in its fury, the air and debris dance,
+ Pulling lightning to the core — you only have one chance.
+ Sheer wonder turns to ruin in the blink of an eye,
+ A town erased beneath a shattered sky.
+ After, only silence remains, Destruction has landed.
+ The lens caught chaos — unfiltered, candid.</p>
+      </article>
+      <article class="poem">
+        <h2>Screaming Silence</h2>
+        <p> Are promises just words,
+ or were they ever meant at all?
+ That’s why I started questioning them,
+ they taste too much like comfort,
+ like reassurance dressed as truth.
+ Actions—
+ they scream what words only whisper.
+ Not in tone,
+ not in volume,
+ not in pitch,
+ but in reflection.
+ In what lingers.
+ In what’s missing when the moment passes.
+ Most were never followed through.
+ Some never even spoke.
+ Just bandages
+ on wounds that never closed,
+ still warm, still bleeding—
+ still burning for something real.
+ And yet,
+ I can respect the silence more than a lie.
+ Because silence, at least,
+ doesn’t pretend to promise.
+ It’s a small step forward,
+ the one it takes to finally stop pretending.
+ It ends up dragging me two steps back,
+ but I’ll always respect what’s done
+ more than what’s spoken.
+</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 6</h2>
+        <p>Was it giving up, or finally waking up?
+
+We stopped knocking on a door,
+a door that never opened.
+Not from weakness,
+but from wisdom.
+We weren’t chosen, just tolerated.
+So we let go, not out of defeat,
+but because our spirit refused
+to starve in waiting.
+We moved on—
+not because we wanted to,
+but because we had to.
+We grew in the absence of light.
+Learned that persistence
+isn’t always the key,
+and that’s okay.
+We accepted the truth.
+And that was bold of us.
+A decision well made.
+A choice our future selves would be proud of
+We have been woken
+
+Was it giving up, or finally waking up?
+
+We stopped knocking on a door, 
+a door that never opened.
+Not from weakness,
+but from wisdom. 
+
+We weren’t chosen, just tolerated. 
+So we let go, not out of defeat,
+but because our spirit refused
+to starve in waiting. 
+
+We moved on— 
+not because we wanted to, 
+but because we had to. 
+
+We grew in the absence of light.
+Learned that persistence
+isn’t always the key, 
+and that’s okay. 
+
+We accepted the truth. 
+And that was bold of us. 
+A decision well made. 
+A choice our future selves would be proud of 
+We have been woken
+</p>
+      </article>
+      <article class="poem">
+        <h2>Their Dream, My Flight
+</h2>
+        <p>They were kids who never stopped growing,
+traded dreams for hardships in a foreign country,
+gave up language, 
+gave up comfort,
+left behind family,
+to build futures they couldn't see.
+
+Parents who worked so hard,
+selfless, silent,
+sacrificed careers
+so we could chase ours.
+
+I see the kid in them still,
+hidden behind tired eyes
+and hands too full 
+with work they loathe,
+missing time, but never love.
+
+If they had what I have,
+they’d fly ten times higher.
+They took the biggest risk,
+Now I owe them something beautiful.
+</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 8</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 9</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 10</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 11</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 12</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 13</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 14</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 15</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 16</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 17</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 18</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 19</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 20</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 21</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 22</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 23</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 24</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 25</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 26</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+      <article class="poem">
+        <h2>Poem Title 27</h2>
+        <p>[Paste your poem text here...]</p>
+      </article>
+
+    </section>
+      </article>
+      <!-- Add more poem blocks as needed -->
+    </section>
+
+    
+
+    <section id="quotes">
+      <h1>Favorite Quotes</h1>
+      <blockquote>
+        “Fill your paper with the breathings of your heart.” — William Wordsworth
+      </blockquote>
+      <blockquote>
+        “A poet is, before anything else, a person who is passionately in love with language.” — W. H. Auden
+      </blockquote>
+      <blockquote>
+        “Poetry is when an emotion has found its thought and the thought has found words.” — Robert Frost
+      </blockquote>
+      <blockquote>
+        “The universe is made of stories, not atoms.” — Muriel Rukeyser
+      </blockquote>
+    </section>
+
+    <section id="contact" class="contact-container">
+      <h1>Let's Connect</h1>
+      <p>If my words moved you or you'd like to collaborate, drop me a line.</p>
+      <form class="contact-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your thoughts..." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <a href="#" class="back-to-top">↑</a>
+
+  <footer>
+    &copy; 2025 Your Name • All rights reserved
+  </footer>
+
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
