@@ -45,6 +45,25 @@
   <div class="profile-container">
     <img src="IMG_3237.jpg" alt="Dhiraj Bhattacharjee" class="profile-image">
     <div class="caption"></div>
+    .profile-container {
+  width: 200px;           /* Adjust size as needed */
+  height: 200px;          /* Must equal width for a perfect circle */
+  border-radius: 50%;     /* Creates the circle */
+  overflow: hidden;       /* Clips the image to the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+  /* Zoom Out Control: */
+  /* 1.0 is default size. 0.85 zooms out to 85%. Lower values zoom out more. */
+  transform: scale(0.85); 
+}
   </div>
 
 </body>
@@ -230,13 +249,15 @@
 
 Every poem on there comes from somewhere real. Those messy, complicated emotions we don't always know how to talk about. 
 
-I have to thank some people who made this possible. My friends who listened to me obsess over line breaks and helped me figure out why my website wasn't working.
+
+        I have to thank some people who made this possible. My friends who listened to me obsess over line breaks and helped me figure out why my website wasn't working.
 
 My english professors over the years espeically Professor Schwartz and Professor Haber, you two changed how I think about writing. You showed me it's not about following rules perfectly, it's about being honest on the page. That lesson stuck with me through every draft.
 
 And to my friends who read my terrible first attempts, gave me real feedback, and convinced me this was worth sharing, thank you. You believed in this before I did.
 
-This site is something I'm genuinely proud of. I know I'll keep tinkering with it as I grow as a writer, but right now I'm just grateful. 
+
+        This site is something I'm genuinely proud of. I know I'll keep tinkering with it as I grow as a writer, but right now I'm just grateful. 
 
 If anything resonates with you, I'd love to hear about it. Feel free to reach out via the contact form if you have any questions, feedback, or just want to talk.
       </p>
